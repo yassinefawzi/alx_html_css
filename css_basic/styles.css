@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    color: white;
+    background-color: brown; 
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+header{
+    display: flex;
+    color: white;
+}
+article{
+    flex: 2;
+    overflow-y: auto;
+    color: wheat;
+    margin: 25px;
+    padding: 25px;
+
+}
+aside{
+    flex: 1;
+    overflow-y: auto;
+}
+footer{
+    padding: 25px;
+    margin: 15px;
+    color: wheat;
+}
+.logo {
+    font-size: 250px;
+}
