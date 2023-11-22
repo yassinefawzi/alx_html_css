@@ -62,7 +62,7 @@
     /** HEADER **/
 
     --header-padding: 4rem 0 0;
-    .header-container{
+    .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -372,7 +372,7 @@
   .section-services .row {
     flex-wrap: wrap;
   }
-  
+
   /*** 4. CARD ***/
   
   /* Card (all styles)
