@@ -62,10 +62,6 @@
     /** HEADER **/
 
     --header-padding: 4rem 0 0;
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-    }
   
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
@@ -224,7 +220,7 @@
   }
 
   .nav .nav-item + .nav-item{
-    margin: var( 0 0 0 2rem); 
+    margin: var(--nav-item-margin); 
   } 
   .nav .nav-link {
     display: block;
@@ -262,7 +258,12 @@
          z-index: 3;
          background: transparent;
   }
-  
+
+  .header-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
   /* Footer
       ============================= */
   
