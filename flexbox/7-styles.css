@@ -62,11 +62,6 @@
     /** HEADER **/
 
     --header-padding: 4rem 0 0;
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
   
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
@@ -262,6 +257,12 @@
          position: relative;
          z-index: 3;
          background: transparent;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   /* Footer
