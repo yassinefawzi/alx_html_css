@@ -217,9 +217,158 @@ a:hover,a:active{
     font-weight: var(--font-weight-semi-bold);
 }
 
+    /*  our result  */
+
+.our-results {
+    position: relative;
+    background: url('images/headphones_hero_2.jpg') center/cover no-repeat;
+    height: 100vh;
+    color: white;
+}
+
+.result-heading {
+    padding-top: 160px;
+    text-align: center;
+}
+
+.result-h1 {
+    font-size: 35px;
+}
+
+.result-p {
+    padding: 0 255px;
+    padding-top: 25px;
+    font-size: 18px;
+    padding-bottom: 100px;
+    line-height: 25px;
+}
+
+.result-con{
+    display: flex;
+    justify-content: center;
+}
+
+.result-incon {
+    display: flex;
+}
+
+.result-incon img {
+    width: 230px;
+    padding-left: 110px;
+}
+
+.result-fill {
+    position: absolute;
+}
+
+.result-fill h3 {
+    font-size: 45px;
+    justify-content: left;
+}
+
+.result-fill p {
+    font-size: 13px;
+    padding-right: 15px;
+}
+
+.shap {
+	position: relative;
+	width: 120px;
+	height: 180px;
+    margin-right: 50px;
+    padding-left: 90px;
+	background: #FF565E;
+	clip-path: polygon( 50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+}
+
+    /*  contact us  */
+
+.form-head {
+    text-align: center;
+    font-size:xx-large;
+    padding-top: 100px;
+    font-family: var(--font-family-base)
+}
+
+.form {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    line-height: 100px;
+    border: none;
+    display:grid;
+    flex-wrap: nowrap;
+}
+
+.form .form-content {
+    margin: 25px 0;
+    border: none;
+    border-bottom: 1px solid rgb(155, 155, 155);
+    font-size: 25px;
+    height: 45px;
+    border-width: 2px;
+}
+
+.form-content:focus {
+    outline: none;
+}
+
+.form-button {
+    text-align: center;   
+}
+
+.form-button button {
+    margin: 0;
+    margin-bottom: 45px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: var(--color-secondary);
+    padding: 3rem 0;
+}
+
+ .footer-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: var(--section-header-align);
+    padding: 2rem 12rem;
+}
+
+ .footer-icon .footer-logo img{
+    max-width: 10.5rem;
+}
+
+ .footer-icon-container .social-icons {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+ .footer-icon .social-icons a {
+    color: var(--color-white);
+    font-size: var(--font-size-x-large);
+    text-decoration: none;
+    margin: 0 .5rem;
+}
+
+ .footer-icon .social-icons a:hover {
+    color: var(--link-hover-color); 
+}
+
+.footer p {
+    color: rgb(81, 81, 81);
+    font-size: 0.785rem;
+    padding-top: 2rem;
+}
+
 @media screen and (max-width: 1200px) {
 
-    /*  main = */
+    /*  main  */
 
     .main-page {
         height: 60vh;
@@ -236,11 +385,77 @@ a:hover,a:active{
         flex-wrap: wrap;
         text-align: center;
     }
+
     .icon-container-1,
     .icon-container-2,
     .icon-container-3,
     .icon-container-4 {
         flex: 1 0 100%; 
+    }
+
+     /* our result */
+
+    .our-results {
+        height: 80vh;
+    }
+
+    .result-p {
+        padding: 0 25px;
+        padding-top: 25px;
+        padding-bottom: 100px; 
+    }
+
+    .pentagone-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .pentagone {
+        flex: 1 0 48%;
+        padding: 1%;
+    }
+
+    .result-con {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .result-incon{
+        padding-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+     .footer {
+        width: auto;
+        align-items: center;
+        margin: 0;
+        padding: 2.4rem 0 0 0;
+
+    }
+
+    .footer-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .footer-icon .social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 2rem 0 1rem 0;
+    }
+
+    .footer p {
+        padding: 1rem 0 1rem 0;
     }
 }
 
@@ -256,7 +471,7 @@ a:hover,a:active{
         margin-left: 0;
     }
 
-    /* Header Section */
+    /* header */
     .navbar-menu {
 		position: absolute;
 		display: none;
@@ -349,5 +564,10 @@ a:hover,a:active{
         flex: 1 0 100%; 
         max-width: none;
         margin: 1rem 0;
+    }
+
+    /* our result */
+    .our-results {
+        height: 190vh;
     }
 }

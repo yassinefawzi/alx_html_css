@@ -217,9 +217,67 @@ a:hover,a:active{
     font-weight: var(--font-weight-semi-bold);
 }
 
+    /*  our result  */
+
+.our-results {
+    position: relative;
+    background: url('images/headphones_hero_2.jpg') center/cover no-repeat;
+    height: 90vh;
+    color: white;
+}
+
+.result-heading {
+    padding-top: 160px;
+    text-align: center;
+}
+
+.result-h1 {
+    font-size: 35px;
+}
+
+.result-p {
+    padding: 0 255px;
+    padding-top: 25px;
+    font-size: 18px;
+    padding-bottom: 100px;
+    line-height: 25px;
+}
+
+.result-con{
+    display: flex;
+}
+
+.result-incon {
+    display: flex;
+}
+
+.result-incon img {
+    width: 230px;
+    padding-left: 110px;
+}
+
+.result-fill {
+    display: flexbox;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+}
+
+.result-fill h3 {
+    padding-top: 20px;
+    padding-left: 160px;
+    font-size: var(--font-size-xx-large);
+}
+
+.result-fill p {
+    position: relative;
+    padding-left: 156px;
+    font-size: var(--font-size-large);
+}
+
 @media screen and (max-width: 1200px) {
 
-    /*  main = */
+    /*  main  */
 
     .main-page {
         height: 60vh;
@@ -236,11 +294,47 @@ a:hover,a:active{
         flex-wrap: wrap;
         text-align: center;
     }
+
     .icon-container-1,
     .icon-container-2,
     .icon-container-3,
     .icon-container-4 {
         flex: 1 0 100%; 
+    }
+
+     /* our result */
+
+     .our-results {
+        height: 80vh;
+    }
+    
+    .result-p {
+        padding: 0 25px;
+        padding-top: 25px;
+        padding-bottom: 100px; 
+    }
+
+    .pentagone-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .pentagone {
+        flex: 1 0 48%;
+        padding: 1%;
+    }
+
+    .result-con {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .result-incon{
+        padding-bottom: 35px;
     }
 }
 
@@ -256,7 +350,7 @@ a:hover,a:active{
         margin-left: 0;
     }
 
-    /* Header Section */
+    /* header */
     .navbar-menu {
 		position: absolute;
 		display: none;
@@ -349,5 +443,10 @@ a:hover,a:active{
         flex: 1 0 100%; 
         max-width: none;
         margin: 1rem 0;
+    }
+
+    /* our result */
+    .our-results {
+        height: 190vh;
     }
 }
